@@ -169,15 +169,15 @@ export function Footer() {
             © {year} Charmi Patel Makeup Studio. All rights reserved.
           </p>
           <p className="text-xs" style={{ color: "rgba(245,236,215,0.25)" }}>
-            Built with love using{" "}
+            " "}
             <a
-              href={`https://caffeine.ai?utm_source=caffeine-footer&utm_medium=referral&utm_content=${encodeURIComponent(hostname)}`}
+              href={`https://Kavya=${encodeURIComponent(hostname)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="transition-colors"
               style={{ color: "rgba(196,149,106,0.6)" }}
             >
-              caffeine.ai
+              Designed BY Kavya Chaudhary 
             </a>
           </p>
         </div>
