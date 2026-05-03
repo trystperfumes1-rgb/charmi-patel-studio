@@ -169,7 +169,7 @@ export function Footer() {
             © {year} Charmi Patel Makeup Studio. All rights reserved.
           </p>
           <p className="text-xs" style={{ color: "rgba(245,236,215,0.25)" }}>
-            " "}
+            {" "}
             <a
               href={`https://Kavya=${encodeURIComponent(hostname)}`}
               target="_blank"

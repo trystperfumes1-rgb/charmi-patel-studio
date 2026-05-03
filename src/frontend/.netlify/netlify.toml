@@ -1,0 +1,28 @@
+plugins = []
+headers = []
+redirects = []
+
+[functions]
+
+[functions."*"]
+
+[build]
+publish = "/opt/build/repo/src/frontend/dist"
+publishOrigin = "config"
+commandOrigin = "config"
+command = "pnpm install --prefer-offline && pnpm -r --if-present run build"
+base = "/opt/build/repo"
+
+[build.environment]
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]
