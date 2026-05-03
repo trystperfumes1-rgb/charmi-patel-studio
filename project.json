@@ -1,0 +1,29 @@
+{
+  "overview": "Luxury 3D-animated portfolio website for Charmi Patel, a professional makeup artist in Ahmedabad who works with celebrities. Features a full dark-pink theme, immersive 3D particle animations, gallery of 12 real portfolio photos, services showcase, celebrity testimonials, client reviews, FAQ, maps, and floating WhatsApp/Instagram action buttons.",
+  "features": [
+    "Hero with 3D animated particle background and portfolio photos",
+    "Full services showcase: Bridal, HD, Airbrush, Party, Pre-Wedding, Celebrity Makeup",
+    "Gallery of 12 real portfolio photos with 3D hover effects",
+    "Celebrity testimonials section with animated cards",
+    "Indian client reviews with 5-star ratings",
+    "Why Choose Us with animated 3D cards",
+    "FAQ accordion with smooth animations",
+    "Maps section with location details",
+    "Call-to-action section with glow effects",
+    "Floating WhatsApp/call button (right side)",
+    "Floating Instagram button (left side)",
+    "Luxury dark-pink pinkish theme with blurry glow effects"
+  ],
+  "category": "portfolio",
+  "tags": [
+    "makeup-artist",
+    "3d-animations",
+    "luxury",
+    "portfolio",
+    "bridal",
+    "beauty",
+    "indian",
+    "ahmedabad"
+  ],
+  "last_updated": "2026-05-02T09:43:30.526Z"
+}

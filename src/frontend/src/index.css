@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Space+Grotesk:wght@300..700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-display: Fraunces;
+    --font-body: Space Grotesk;
+    --font-mono: JetBrains Mono;
+    --radius: 0.625rem;
+
+    /* Light beige/brown luxury theme */
+    --background: 0.97 0.025 75;
+    --foreground: 0.22 0.055 45;
+    --card: 0.94 0.03 72;
+    --card-foreground: 0.22 0.055 45;
+    --popover: 0.96 0.025 70;
+    --popover-foreground: 0.22 0.055 45;
+
+    --primary: 0.52 0.1 55;
+    --primary-foreground: 0.98 0.01 80;
+
+    --secondary: 0.72 0.1 65;
+    --secondary-foreground: 0.22 0.055 45;
+    --muted: 0.9 0.03 70;
+    --muted-foreground: 0.5 0.06 50;
+
+    --accent: 0.42 0.08 50;
+    --accent-foreground: 0.98 0.01 80;
+
+    --destructive: 0.55 0.24 25;
+    --destructive-foreground: 0.98 0.01 80;
+
+    --border: 0.78 0.05 60;
+    --input: 0.88 0.04 65;
+    --ring: 0.52 0.1 55;
+
+    --chart-1: 0.52 0.1 55;
+    --chart-2: 0.72 0.1 65;
+    --chart-3: 0.42 0.08 50;
+    --chart-4: 0.65 0.08 75;
+    --chart-5: 0.6 0.12 40;
+
+    --sidebar: 0.94 0.03 72;
+    --sidebar-foreground: 0.22 0.055 45;
+    --sidebar-primary: 0.52 0.1 55;
+    --sidebar-primary-foreground: 0.98 0.01 80;
+    --sidebar-accent: 0.88 0.04 68;
+    --sidebar-accent-foreground: 0.35 0.07 48;
+    --sidebar-border: 0.78 0.05 60;
+    --sidebar-ring: 0.52 0.1 55;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+    background-color: #fdf6ec;
+    color: #3d2b1f;
+  }
+}
+
+@layer utilities {
+  .transition-smooth {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+@font-face {
+  font-family: "Fraunces";
+  src: url("/assets/fonts/Fraunces.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("/assets/fonts/SpaceGrotesk.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/assets/fonts/JetBrainsMono.woff2") format("woff2");
+  font-display: swap;
+}
+
+@layer utilities {
+  .glow-brown {
+    box-shadow: 0 0 20px rgba(139, 94, 60, 0.35), 0 0 40px
+      rgba(139, 94, 60, 0.18);
+  }
+
+  .glow-amber {
+    box-shadow: 0 0 20px rgba(196, 149, 106, 0.4), 0 0 40px
+      rgba(196, 149, 106, 0.2);
+  }
+
+  /* Legacy alias kept for existing components */
+  .glow-pink {
+    box-shadow: 0 0 20px rgba(139, 94, 60, 0.35), 0 0 40px
+      rgba(139, 94, 60, 0.18);
+  }
+
+  .glow-accent {
+    box-shadow: 0 0 15px rgba(139, 94, 60, 0.25);
+  }
+
+  .glassmorphism {
+    background: rgba(253, 246, 236, 0.82);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(139, 94, 60, 0.18);
+  }
+
+  .glass-beige {
+    background: rgba(245, 236, 215, 0.88);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(139, 94, 60, 0.22);
+    box-shadow: 0 8px 32px rgba(139, 94, 60, 0.08);
+  }
+
+  .glassy-border {
+    border: 1px solid rgba(139, 94, 60, 0.22);
+    background: rgba(253, 246, 236, 0.6);
+  }
+
+  .blur-glow {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.4;
+    pointer-events: none;
+  }
+
+  .blur-glow-brown {
+    @apply blur-glow;
+    background: rgba(139, 94, 60, 0.28);
+  }
+
+  .blur-glow-amber {
+    @apply blur-glow;
+    background: rgba(196, 149, 106, 0.35);
+  }
+
+  /* Legacy aliases */
+  .blur-glow-pink {
+    @apply blur-glow;
+    background: rgba(139, 94, 60, 0.22);
+  }
+
+  .blur-glow-accent {
+    @apply blur-glow;
+    background: rgba(196, 149, 106, 0.2);
+  }
+
+  .text-gradient-primary {
+    background: linear-gradient(135deg, #8b5e3c, #c4956a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-brown {
+    background: linear-gradient(135deg, #3d2b1f 0%, #8b5e3c 50%, #c4956a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: light;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0e6d3;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(139, 94, 60, 0.45);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(139, 94, 60, 0.7);
+}
